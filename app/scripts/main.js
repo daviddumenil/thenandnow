@@ -14,14 +14,14 @@
 	var hash = new L.Hash(map);
 
 	/* add default OSM tile layer */
-	new L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+	new L.tileLayer('http://upload.wikimedia.org/wikipedia/commons/b/b5/Cannon_Street_(W).png', {
 		minZoom: 0,
 		maxZoom: 18,
 		attribution: 'Map data © <a href="http://www.openstreetmap.org">OpenStreetMap contributors</a>'
 	}).addTo(map);
 
 	/* add the 2007 overlay */
-	var overlay = L.tileLayer('http://98.202.195.171/osm/{z}/{x}/{y}.png').addTo(map);
+	var overlay = L.tileLayer('http://upload.wikimedia.org/wikipedia/commons/0/09/King_William_Street.png').addTo(map);
 
 	var range = document.getElementById('range');
 
